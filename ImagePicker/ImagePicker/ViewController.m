@@ -53,11 +53,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         picker.mediaTypes = [UIImagePickerController  availableMediaTypesForSourceType:picker.sourceType];
         picker.allowsEditing = YES;
-        picker.toolbarHidden = YES;
-        picker.wantsFullScreenLayout = YES;
-        picker.cameraViewTransform = CGAffineTransformScale(picker.cameraViewTransform,CAMERA_TRANSFORM_X,CAMERA_TRANSFORM_Y);
-
-
+       
         [self presentViewController:picker animated:YES completion:Nil];
     }
     
@@ -68,6 +64,11 @@
         picker.sourceType = UIImagePickerControllerSourceTypeCamera ;
         picker.allowsEditing = YES;
         picker.showsCameraControls = NO;
+        picker.toolbarHidden = YES;
+        picker.wantsFullScreenLayout = YES;
+        picker.cameraViewTransform = CGAffineTransformScale(picker.cameraViewTransform,CAMERA_TRANSFORM_X,CAMERA_TRANSFORM_Y);
+      
+
         
         picker.navigationBarHidden = YES;
         picker.cameraOverlayView = overlay;
