@@ -47,7 +47,6 @@
 -(void)cancelButtonSelected:(UIButton *)button
 {
     [imagepicker dismissViewControllerAnimated:YES completion:nil];
-
 }
 
 @end

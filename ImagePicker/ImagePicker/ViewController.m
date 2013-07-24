@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "OverlayView.h"
 #import <MediaPlayer/MediaPlayer.h>
-#import <QuartzCore/QuartzCore.h>
 
 
 @interface ViewController ()
@@ -20,8 +19,6 @@
 @synthesize imageSelected,picker;
 #define SCREEN_WIDTH  320
 #define SCREEN_HEIGTH 480
-#define CAMERA_TRANSFORM_X 1
-#define CAMERA_TRANSFORM_Y 1.12412
 
 
 - (void)viewDidLoad
@@ -46,9 +43,10 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 
 {
+    picker =[[UIImagePickerController alloc]init];
     if (buttonIndex == 1)
     {
-        picker = [[UIImagePickerController alloc] init];
+        //picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         picker.mediaTypes = [UIImagePickerController  availableMediaTypesForSourceType:picker.sourceType];
@@ -60,24 +58,17 @@
   else if (buttonIndex == 0)
   {
         OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGTH)];
-        picker = [[UIImagePickerController alloc] init];
+      //  picker = [[UIImagePickerController alloc] init];
         picker.sourceType = UIImagePickerControllerSourceTypeCamera ;
         picker.allowsEditing = YES;
         picker.showsCameraControls = NO;
-        picker.toolbarHidden = YES;
-        picker.wantsFullScreenLayout = YES;
-        picker.cameraViewTransform = CGAffineTransformScale(picker.cameraViewTransform,CAMERA_TRANSFORM_X,CAMERA_TRANSFORM_Y);
-      
-
-        
-        picker.navigationBarHidden = YES;
         picker.cameraOverlayView = overlay;
         picker.delegate = self;
         overlay.imagepicker=picker;
-        overlay.backgroundColor = [UIColor clearColor];
         [self presentViewController:picker animated:YES completion:Nil];
   }
-    
+    self.imageSelected.contentMode = UIViewContentModeScaleAspectFit;
+
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *) Picker
@@ -98,6 +89,7 @@
     else
     {
         imageSelected.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+        
     }
      
     [self dismissViewControllerAnimated:YES completion:nil];

@@ -32,14 +32,14 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="FNM-0p-6Kf"/>
-                                    <constraint firstAttribute="height" constant="218" id="vpc-hX-BlC"/>
+                                    <constraint firstAttribute="height" constant="260" id="IxO-rr-c1d"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="FdZ-Dm-Gcm" secondAttribute="bottom" constant="41" id="1rS-x5-npg"/>
-                            <constraint firstItem="FdZ-Dm-Gcm" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="SgK-Xa-pca"/>
+                            <constraint firstItem="KRg-TR-xhi" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Eu0-Fj-wte"/>
                             <constraint firstItem="KRg-TR-xhi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Zp2-8c-dIs"/>
                             <constraint firstItem="FdZ-Dm-Gcm" firstAttribute="centerX" secondItem="KRg-TR-xhi" secondAttribute="centerX" type="default" id="mQu-aT-kcx"/>
                         </constraints>

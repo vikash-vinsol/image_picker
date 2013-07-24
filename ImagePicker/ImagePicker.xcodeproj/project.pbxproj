@@ -10,7 +10,6 @@
 		EB920BC91797FC7C001EB9CB /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB920BC81797FC7C001EB9CB /* OverlayView.m */; };
 		EB920BD4179806A8001EB9CB /* overlaygraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = EB920BD2179806A8001EB9CB /* overlaygraphic.png */; };
 		EB920BD81798131A001EB9CB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB920BD71798131A001EB9CB /* MediaPlayer.framework */; };
-		EBD4AC13179EB72A009E03FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD4AC12179EB72A009E03FA /* QuartzCore.framework */; };
 		EBE4AA02178D885700FF1E6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE4AA01178D885700FF1E6D /* UIKit.framework */; };
 		EBE4AA04178D885700FF1E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE4AA03178D885700FF1E6D /* Foundation.framework */; };
 		EBE4AA06178D885700FF1E6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE4AA05178D885700FF1E6D /* CoreGraphics.framework */; };
@@ -29,7 +28,6 @@
 		EB920BC81797FC7C001EB9CB /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		EB920BD2179806A8001EB9CB /* overlaygraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlaygraphic.png; sourceTree = "<group>"; };
 		EB920BD71798131A001EB9CB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		EBD4AC12179EB72A009E03FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EBE4A9FE178D885700FF1E6D /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE4AA01178D885700FF1E6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EBE4AA03178D885700FF1E6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD4AC13179EB72A009E03FA /* QuartzCore.framework in Frameworks */,
 				EB920BD81798131A001EB9CB /* MediaPlayer.framework in Frameworks */,
 				EBE4AA02178D885700FF1E6D /* UIKit.framework in Frameworks */,
 				EBE4AA04178D885700FF1E6D /* Foundation.framework in Frameworks */,
@@ -67,7 +64,6 @@
 		EBE4A9F5178D885700FF1E6D = {
 			isa = PBXGroup;
 			children = (
-				EBD4AC12179EB72A009E03FA /* QuartzCore.framework */,
 				EB920BD71798131A001EB9CB /* MediaPlayer.framework */,
 				EBE4AA07178D885700FF1E6D /* ImagePicker */,
 				EBE4AA00178D885700FF1E6D /* Frameworks */,
