@@ -24,6 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    picker =[[UIImagePickerController alloc]init];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -38,15 +40,14 @@
     
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     [actionSheet showInView:self.view];
+
     
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 
 {
-    picker =[[UIImagePickerController alloc]init];
     if (buttonIndex == 1)
     {
-        //picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         picker.mediaTypes = [UIImagePickerController  availableMediaTypesForSourceType:picker.sourceType];
@@ -58,7 +59,6 @@
   else if (buttonIndex == 0)
   {
         OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGTH)];
-      //  picker = [[UIImagePickerController alloc] init];
         picker.sourceType = UIImagePickerControllerSourceTypeCamera ;
         picker.allowsEditing = YES;
         picker.showsCameraControls = NO;
